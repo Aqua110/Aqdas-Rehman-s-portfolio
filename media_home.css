@@ -1,0 +1,133 @@
+@media screen and (max-width: 998px) {
+
+    html{
+        overflow-x: hidden;
+    }
+    body{
+        overflow-x: hidden;
+    }
+
+    .navbar{
+        position: relative;
+    }
+
+    .name-container{
+        width: 80vw;
+        justify-content: flex-start;
+    }
+
+    .menu-button-container{
+        width: 20vw;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .menu{
+        height: 5vh;
+        width: 5vh;
+        background-color: var(--normal-bg-color);
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+
+    .menu[name="close"]{
+        display: none;
+    }
+
+    .nav-link-container{
+        height: 40vh;
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 8vh;
+        background-color: var(--highlighted-bg-color);
+        transform: translateX(100%);
+        transition: all 0.5s linear;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        z-index: 999;
+    }
+
+    .nav-link-list{
+        height: 40vh;
+        width: 100%;
+        margin: 0;
+        flex-direction: column;    
+    }
+
+    .nav-link{
+        font: larger;
+    }
+    
+    .active-menu .nav-link-container{
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateX(0);
+    }
+
+    .active-menu .menu[name="close"]{
+        display: block;
+    }
+
+    .active-menu .menu[name="bars"]{
+        display: none;
+    } 
+    
+    .section-first{
+        padding: 10px 20px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: baseline;
+    }
+
+    .info-container{
+        width: 100%;
+        height: auto;
+    }
+
+    .info-heading{
+        font-size: 4vh
+    }
+
+    .skills-container{
+        height: 5vh;
+    }
+
+    .skills-list{
+        height: 5vh;
+    }
+
+    .skill-item::after{
+        height: 5vh;
+    }
+
+    @keyframes slide {
+        0%{
+            top: 0;
+        }
+        100%{
+            top: -12vh;
+        }  
+    }
+
+    .info-refrence-button{
+        padding: 10px;
+        height: 6vh;
+        border-radius: 10px;
+    }
+    
+
+    .image-container{
+        width: 100%;
+    }
+
+    .developer-img{
+        width: 100%;
+        height: auto;
+    }
+}
