@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Dancing+Script:wght@700&family=M+PLUS+1p:wght@100&family=Roboto&display=swap');
+
+
 :root {
-    --active-bg-color: #001524;
-    --highlighted-text-color: #ff7d00;
-    --highlighted-bg-color: #15616d;
-    --normal-test-color: #78290f;
-    --normal-bg-color: #ffecd1;
+    --active-bg-color: #2b2d42;
+    --highlighted-text-color: #ff6f61;
+    --highlighted-bg-color: #222222;
+    --normal-text-color: #008080;
+    --normal-bg-color: #F2F2F2;
+}
+
+body{
+    background-color: var(--normal-bg-color);
+    overflow-x: hidden;
 }
 
 *{
@@ -60,23 +68,40 @@
 
 .active, .nav-link:hover{
     background-color: var(--active-bg-color);
-    color: var(--highlighted-text-color);
+    color: var(--normal-bg-color);
     cursor: pointer;
 }
 
-.highlighted{
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--normal-bg-color);
+
+.about-container{
+    width: 70vw;
+    margin: 10vh auto;
+    
 }
 
-.project{
-    height: 60vh;
+.profile-pic-container{
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: var(--normal-bg-color);
+    
+}
+
+.profile-pic{
+    height: 20vh;
+    margin-right: 2vw;
+    border-radius: 50%;
+    
+
+}
+
+.about-me{
+    font-size: 2.5vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.key-skill-item{
+    margin-left: 3vw;
+    font-size: 2.5vh;
+    font-family: 'Roboto', sans-serif;
+
 }
 
