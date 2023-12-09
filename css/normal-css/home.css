@@ -1,9 +1,9 @@
 :root {
-    --active-bg-color: #001524;
-    --highlighted-text-color: #ff7d00;
-    --highlighted-bg-color: #15616d;
-    --normal-test-color: #78290f;
-    --normal-bg-color: #ffecd1;
+    --active-bg-color: #2b2d42;
+    --highlighted-text-color: #ff6f61;
+    --highlighted-bg-color: #222222;
+    --normal-text-color: #008080;
+    --normal-bg-color: #F2F2F2;
 }
 
 *{
@@ -29,6 +29,7 @@
 .name{
     padding: 2vh;
     color: var(--highlighted-text-color);
+    font-size: 3vh;
 }
 
 .nav-link-container{
@@ -81,7 +82,7 @@
 
 .info-heading{
     font-size: 6vh;
-    color: var(--normal-test-color);
+    color: var(--highlighted-bg-color);
 }
 
 .highligted-text{
@@ -144,7 +145,7 @@
     margin: 1vh 5px;
     height: 5vh;
     padding: 15px;    
-    background-color: var(--highlighted-bg-color);
+    background-color: var(--normal-text-color);
     border: none;
     box-shadow: 1px 1px 5px black;
     font-size: smaller;
