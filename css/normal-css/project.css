@@ -1,9 +1,9 @@
 :root {
-    --active-bg-color: #001524;
-    --highlighted-text-color: #ff7d00;
-    --highlighted-bg-color: #15616d;
-    --normal-test-color: #78290f;
-    --normal-bg-color: #ffecd1;
+    --active-bg-color: #2b2d42;
+    --highlighted-text-color: #ff6f61;
+    --highlighted-bg-color: #222222;
+    --normal-text-color: #008080;
+    --normal-bg-color: #F2F2F2;
 }
 
 *{
@@ -75,6 +75,7 @@
     width: 15vw;
     background-color: var(--normal-bg-color);
     border-right: 1px solid var(--normal-test-color);
+    
 }
 
 .project_menu{
@@ -93,6 +94,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .active_category .project_category:hover{
