@@ -73,5 +73,20 @@
 
     .active-menu .menu[name="bars"]{
         display: none;
-    }    
+    } 
+    
+    .profile-pic-container{
+        flex-direction: column;
+    }
+    .profile-pic{
+        margin-bottom: 5vh;
+    }
+
+    .about-me{
+        text-align: justify;
+    }
+
+    .hello{
+        text-align: center;
+    }
 }
